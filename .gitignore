@@ -174,4 +174,8 @@ coverage/
 # data/*.jsonl
 # Data/outputs/*.xlsx
 
+# Results files that may contain sensitive data
+**/results.jsonl
+**/data/results.jsonl
+
 ._*
