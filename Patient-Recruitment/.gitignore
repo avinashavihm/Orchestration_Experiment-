@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.environments
+.env
+
+# Log files
+*.log
+
+# Generated output files
+Data/outputs/*.xlsx
+
+
+.cursor/rules/kluster-code-verify.mdc
+.kluster

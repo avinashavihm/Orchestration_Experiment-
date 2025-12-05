@@ -1,0 +1,58 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: patient-recruitment-backend
+    ports:
+      - "8000:8000"  # API port
+      - "4001:4001"  # MCP server port
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.5-flash}
+      - AGENTOPS_API_KEY=${AGENTOPS_API_KEY}
+      - UPLOAD_DIR=/app/data/uploads
+      - OUTPUT_DIR=/app/data/outputs
+      - LLM_TEMPERATURE=${LLM_TEMPERATURE:-0.0}
+      - LLM_MAX_OUTPUT_TOKENS=${LLM_MAX_OUTPUT_TOKENS:-8192}
+      - LLM_RESPONSE_MIME_TYPE=${LLM_RESPONSE_MIME_TYPE:-application/json}
+      - MCP_PORT=4001
+      - MCP_HOST=0.0.0.0
+      - SUPPLY_AGENT_MCP_URL=ws://clin-supply-backend:4002
+      - A2A_ENABLED=${A2A_ENABLED:-true}
+      - A2A_MONTHLY_RATE=${A2A_MONTHLY_RATE:-10.0}
+      - A2A_VISITS_PER_PATIENT=${A2A_VISITS_PER_PATIENT:-5}
+      - A2A_KIT_USAGE_PER_VISIT=${A2A_KIT_USAGE_PER_VISIT:-1.0}
+    volumes:
+      - ./Data/uploads:/app/data/uploads
+      - ./Data/outputs:/app/data/outputs
+    networks:
+      - agents-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        - VITE_API_URL=/api
+    container_name: patient-recruitment-frontend
+    ports:
+      - "3002:80"
+    depends_on:
+      - backend
+    networks:
+      - agents-network
+    restart: unless-stopped
+
+networks:
+  agents-network:
+    driver: bridge
+    name: agents-network
+

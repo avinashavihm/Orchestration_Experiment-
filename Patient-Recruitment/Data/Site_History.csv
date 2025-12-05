@@ -1,0 +1,101 @@
+site_id,indication,phase,start_date,end_date,patients_screened,patients_enrolled,screen_fail_rate_pct,avg_startup_days,notes
+S002,Type 2 Diabetes,II,2022-03-26,2023-09-05,180,148,21.3,36,Moderate accrual
+S008,Oncology,I,2021-10-20,2023-03-18,226,137,34.3,45,Strong PI performance
+S006,Oncology,II,2021-06-30,2023-06-04,58,49,39.6,55,Moderate accrual
+S002,Type 2 Diabetes,II,2022-12-08,2024-10-18,216,80,14.5,20,Slow IRB approval
+S005,Oncology,II,2020-01-17,2024-03-11,139,57,27.8,27,Slow IRB approval
+S001,Oncology,III,2020-06-06,2023-03-28,179,62,21.4,54,Strong PI performance
+S010,Hypertension,III,2021-04-21,2024-11-28,228,141,39.1,34,Slow IRB approval
+S006,Oncology,I,2022-12-05,2023-10-13,186,30,35.3,41,Slow IRB approval
+S009,Oncology,I,2021-06-01,2023-08-09,115,82,35.1,33,Strong PI performance
+S001,Type 2 Diabetes,III,2020-04-08,2023-03-11,48,68,24.1,45,Moderate accrual
+S010,Type 2 Diabetes,II,2022-11-26,2023-02-17,238,69,22.4,47,Moderate accrual
+S003,Hypertension,I,2020-10-06,2023-04-05,67,56,18.2,42,Moderate accrual
+S007,Oncology,III,2021-05-11,2024-03-29,245,69,11.7,33,Strong PI performance
+S004,Oncology,III,2020-10-28,2023-07-24,167,85,35.9,43,Slow IRB approval
+S009,Oncology,III,2020-06-29,2023-08-07,91,71,34.4,21,Moderate accrual
+S003,Hypertension,II,2021-08-29,2024-04-19,122,45,40.0,45,Moderate accrual
+S005,Hypertension,III,2021-11-30,2024-03-08,150,104,39.9,33,Strong PI performance
+S003,Type 2 Diabetes,III,2022-09-19,2023-12-08,183,142,26.7,26,Moderate accrual
+S007,Hypertension,III,2020-07-09,2024-07-05,156,109,33.1,22,Strong PI performance
+S005,Oncology,III,2020-09-09,2024-09-04,108,99,38.3,42,Slow IRB approval
+S009,Oncology,I,2022-09-07,2023-10-17,138,148,35.5,37,Strong PI performance
+S007,Hypertension,I,2022-07-16,2023-09-12,179,125,17.4,57,Strong PI performance
+S002,Oncology,III,2020-05-07,2023-12-24,64,60,23.5,54,Strong PI performance
+S004,Oncology,II,2020-01-18,2023-01-24,219,123,13.9,34,Strong PI performance
+S009,Hypertension,I,2021-07-19,2024-06-06,162,43,38.6,44,Slow IRB approval
+S002,Hypertension,III,2021-07-23,2023-04-11,92,44,28.2,56,Slow IRB approval
+S010,Oncology,I,2021-11-16,2023-06-30,190,81,16.9,47,Moderate accrual
+S009,Oncology,I,2021-09-17,2023-08-12,183,42,30.2,29,Slow IRB approval
+S010,Oncology,II,2022-05-03,2024-10-21,96,71,28.5,58,Slow IRB approval
+S005,Type 2 Diabetes,III,2022-08-19,2024-03-18,78,129,20.7,36,Moderate accrual
+S002,Type 2 Diabetes,III,2020-06-03,2024-08-31,148,73,13.4,58,Slow IRB approval
+S004,Type 2 Diabetes,II,2021-05-04,2023-11-22,220,38,30.1,41,Strong PI performance
+S007,Hypertension,II,2022-02-23,2024-05-31,81,39,25.6,45,Strong PI performance
+S008,Type 2 Diabetes,III,2020-09-02,2023-01-17,225,55,33.2,44,Moderate accrual
+S003,Hypertension,III,2022-11-28,2023-12-03,206,25,25.6,36,Moderate accrual
+S001,Hypertension,II,2022-01-28,2023-09-16,181,141,35.6,32,Moderate accrual
+S004,Type 2 Diabetes,I,2021-06-21,2024-05-12,161,78,26.6,39,Strong PI performance
+S002,Type 2 Diabetes,I,2022-07-09,2023-06-10,172,142,26.8,44,Slow IRB approval
+S008,Type 2 Diabetes,II,2021-02-11,2024-04-20,202,27,36.3,23,Strong PI performance
+S004,Oncology,I,2021-06-08,2024-10-26,114,40,22.1,29,Moderate accrual
+S002,Type 2 Diabetes,II,2022-04-07,2024-11-21,185,111,14.0,22,Slow IRB approval
+S006,Oncology,I,2022-06-21,2024-11-06,115,81,10.9,37,Slow IRB approval
+S006,Hypertension,I,2020-02-05,2024-01-16,48,99,32.7,55,Strong PI performance
+S010,Oncology,III,2021-11-15,2024-06-29,113,36,28.6,41,Moderate accrual
+S004,Type 2 Diabetes,III,2020-01-20,2024-11-22,225,98,31.1,53,Strong PI performance
+S006,Hypertension,I,2020-11-16,2024-03-03,184,120,16.4,27,Slow IRB approval
+S002,Hypertension,I,2021-05-26,2024-09-05,46,40,14.1,59,Strong PI performance
+S010,Hypertension,III,2021-02-03,2023-09-26,213,96,10.4,38,Strong PI performance
+S002,Oncology,III,2021-10-15,2024-07-31,180,126,20.5,56,Moderate accrual
+S010,Type 2 Diabetes,III,2022-08-29,2024-02-22,207,100,27.7,25,Moderate accrual
+S004,Hypertension,II,2021-04-15,2023-06-18,209,48,21.8,45,Slow IRB approval
+S008,Hypertension,I,2022-04-13,2023-02-13,176,52,23.1,53,Strong PI performance
+S007,Hypertension,III,2021-12-27,2024-07-10,217,141,37.1,25,Strong PI performance
+S009,Oncology,I,2022-05-03,2023-10-13,66,32,20.4,56,Strong PI performance
+S008,Oncology,II,2020-02-20,2024-02-02,161,146,25.4,52,Slow IRB approval
+S005,Type 2 Diabetes,II,2021-07-28,2023-01-13,233,116,33.5,41,Slow IRB approval
+S002,Oncology,III,2020-05-29,2024-08-30,44,60,21.9,40,Moderate accrual
+S005,Hypertension,II,2020-11-09,2023-10-30,68,114,28.7,25,Moderate accrual
+S008,Type 2 Diabetes,I,2021-07-23,2023-09-11,204,32,35.9,25,Moderate accrual
+S010,Hypertension,III,2020-10-31,2024-05-14,205,82,38.5,23,Strong PI performance
+S009,Hypertension,I,2021-11-12,2023-02-05,122,84,14.4,49,Strong PI performance
+S009,Oncology,I,2022-04-17,2024-12-28,175,74,37.8,30,Moderate accrual
+S001,Type 2 Diabetes,II,2022-12-13,2023-04-01,148,52,24.8,49,Strong PI performance
+S009,Oncology,II,2022-09-29,2024-08-28,104,116,17.7,50,Moderate accrual
+S007,Oncology,II,2021-03-19,2024-08-25,125,125,23.8,43,Slow IRB approval
+S009,Type 2 Diabetes,II,2021-09-04,2024-02-23,184,65,39.4,28,Moderate accrual
+S008,Hypertension,II,2022-09-19,2023-04-26,110,124,24.8,22,Slow IRB approval
+S001,Hypertension,III,2020-09-20,2024-09-09,84,88,19.9,50,Strong PI performance
+S008,Type 2 Diabetes,I,2022-12-12,2023-07-16,171,51,29.0,59,Moderate accrual
+S008,Hypertension,I,2022-09-30,2024-05-16,75,142,17.2,56,Strong PI performance
+S003,Type 2 Diabetes,I,2020-01-05,2024-09-18,109,87,12.3,55,Slow IRB approval
+S001,Type 2 Diabetes,I,2022-02-12,2024-05-08,198,41,13.9,43,Slow IRB approval
+S008,Oncology,II,2022-05-26,2023-03-17,58,97,13.8,50,Slow IRB approval
+S003,Type 2 Diabetes,I,2022-09-18,2024-02-18,228,57,14.6,25,Strong PI performance
+S003,Oncology,III,2022-06-02,2024-01-12,147,141,14.2,21,Strong PI performance
+S001,Hypertension,III,2020-02-16,2024-02-25,221,108,29.2,39,Strong PI performance
+S005,Hypertension,I,2022-05-16,2024-12-30,206,101,15.5,47,Strong PI performance
+S010,Hypertension,I,2022-04-02,2023-10-05,130,116,20.4,30,Slow IRB approval
+S007,Hypertension,III,2022-07-24,2024-11-07,241,136,36.9,23,Slow IRB approval
+S010,Oncology,III,2021-10-17,2024-01-30,129,53,24.2,34,Moderate accrual
+S009,Hypertension,II,2020-09-25,2024-04-02,58,37,30.0,25,Moderate accrual
+S007,Type 2 Diabetes,III,2021-01-04,2023-07-12,78,70,15.2,49,Strong PI performance
+S009,Type 2 Diabetes,II,2021-09-27,2024-11-20,165,59,15.8,57,Slow IRB approval
+S008,Type 2 Diabetes,II,2021-10-18,2023-04-10,234,149,11.2,21,Slow IRB approval
+S002,Oncology,II,2020-04-29,2024-07-02,212,30,15.1,34,Slow IRB approval
+S001,Hypertension,II,2022-04-10,2023-04-07,180,106,18.4,30,Moderate accrual
+S007,Hypertension,II,2022-12-17,2024-10-26,165,139,15.3,27,Moderate accrual
+S007,Hypertension,I,2022-01-10,2024-10-25,97,93,12.7,45,Slow IRB approval
+S008,Oncology,III,2020-04-26,2023-07-10,187,71,13.6,24,Slow IRB approval
+S005,Type 2 Diabetes,II,2022-03-01,2023-02-07,239,49,23.8,25,Slow IRB approval
+S003,Type 2 Diabetes,III,2022-10-09,2024-01-05,100,90,16.2,45,Moderate accrual
+S008,Hypertension,III,2022-12-17,2024-11-26,166,34,20.9,23,Slow IRB approval
+S006,Type 2 Diabetes,II,2021-09-25,2024-06-09,144,80,25.1,38,Slow IRB approval
+S003,Type 2 Diabetes,I,2021-05-27,2023-10-07,206,54,30.7,39,Strong PI performance
+S001,Oncology,II,2022-03-12,2023-08-06,40,138,11.2,52,Strong PI performance
+S003,Oncology,I,2021-07-13,2023-10-01,170,147,34.0,39,Moderate accrual
+S005,Oncology,III,2021-05-02,2023-03-04,244,133,28.8,31,Slow IRB approval
+S003,Oncology,I,2022-06-15,2024-08-19,131,29,12.5,20,Slow IRB approval
+S001,Hypertension,I,2021-12-04,2024-12-30,229,143,36.2,45,Strong PI performance
+S005,Oncology,I,2021-08-03,2023-12-09,230,144,37.6,33,Moderate accrual

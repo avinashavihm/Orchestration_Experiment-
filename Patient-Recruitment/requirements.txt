@@ -1,0 +1,43 @@
+# fastapi
+# uvicorn[standard]
+# pydantic>=2
+# sqlalchemy>=2
+# alembic
+# pandas
+# openpyxl
+# xlsxwriter
+# pdfplumber
+# rapidfuzz
+# python-dotenv
+# google-generativeai
+# # optional / if available in your environment:
+# agno>=2.*            # Agno 2.0 (or latest)
+# # agnoos               # AgnoOS runtime (if separate package name)
+# agentops
+
+fastapi>=0.115.5
+uvicorn[standard]>=0.31.1
+python-multipart>=0.0.9
+pydantic>=2.9.2
+pandas>=2.2.2
+numpy>=1.26.4
+openpyxl>=3.1.5
+pypdf>=4.3.1
+
+# Gemini (Google Generative AI)
+google-generativeai>=0.7.2
+
+# Observability (swap versions as you like)
+agentops>=0.3.12
+
+# Agno 2.0 & AgnoOS (placeholders; adjust to your actual packages/versions)
+agno>=2.0.0
+# agno-os>=0.1.0
+
+python-dotenv>=1.0.1
+streamlit
+PyPDF2
+tqdm
+
+# MCP & A2A Integration
+websockets>=12.0

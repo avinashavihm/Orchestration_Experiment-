@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .file-upload-area {
+    @apply border-2 border-dashed border-gray-300 rounded-lg p-8 text-center transition-all duration-200;
+  }
+  
+  .file-upload-area:hover {
+    @apply border-primary-400 bg-primary-50;
+  }
+  
+  .file-upload-area.dragover {
+    @apply border-primary-500 bg-primary-100;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+}
+

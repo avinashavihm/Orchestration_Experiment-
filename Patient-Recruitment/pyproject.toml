@@ -1,0 +1,23 @@
+[project]
+name = "patient-recruitment-agent-multiple-data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "agentops>=0.3.12",
+    "agno>=2.0.0",
+    "fastapi>=0.115.5",
+    "google-generativeai>=0.7.2",
+    "numpy>=1.26.4",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.2",
+    "pydantic>=2.9.2",
+    "pypdf>=4.3.1",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.0.1",
+    "python-multipart>=0.0.9",
+    "streamlit>=1.51.0",
+    "tqdm>=4.67.1",
+    "uvicorn[standard]>=0.31.1",
+]
