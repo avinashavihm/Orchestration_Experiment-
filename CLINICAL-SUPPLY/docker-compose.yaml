@@ -1,0 +1,56 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: clin-supply-backend
+    ports:
+      - "8001:8000"  # API port (different from recruitment to avoid conflicts)
+      - "4002:4002"  # MCP server port
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_API_KEY_1=${GEMINI_API_KEY_1:-}
+      - GEMINI_API_KEY_2=${GEMINI_API_KEY_2:-}
+      - GEMINI_API_KEY_3=${GEMINI_API_KEY_3:-}
+      - AGENTOPS_API_KEY=${AGENTOPS_API_KEY}
+      - DATA_DIR=/app/data
+      - ENV=${ENV:-production}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.0-flash}
+      - MCP_PORT=4002
+      - MCP_HOST=0.0.0.0
+      - RECRUITMENT_AGENT_MCP_URL=ws://patient-recruitment-backend:4001
+      - A2A_ENABLED=${A2A_ENABLED:-false}
+      - A2A_MONTHLY_RATE=${A2A_MONTHLY_RATE:-10.0}
+      - A2A_SCREEN_FAIL_RATE=${A2A_SCREEN_FAIL_RATE:-0.3}
+    volumes:
+      - ./data:/app/data:ro
+      - ./uploads:/tmp/uploads
+    networks:
+      - agents-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: clin-supply-frontend
+    ports:
+      - "3003:80"  # Different port from recruitment frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - agents-network
+    restart: unless-stopped
+
+networks:
+  agents-network:
+    external: true
+    name: agents-network
+
